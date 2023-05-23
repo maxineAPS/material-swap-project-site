@@ -61,18 +61,22 @@
               <span class="author-block">
                 <a href="https://maxineps.com" target="_blank">Maxine Perroni-Scharf</a><sup></sup>,</span>
                 <span class="author-block">
-                  <a href="https://www.cs.princeton.edu/~smr/" target="_blank">Szymon Rusinkiewicz</a><sup></sup></span>
+                  <a href="https://yannickhold.com" target="_blank">Yannick Hold-Geoffroy</a><sup></sup>,</span>
+                  <span class="author-block">
+                  <a href="http://www.kalyans.org" target="_blank">Kalyan Sunkavalli</a><sup></sup></span>
+                  <span class="author-block">
+                  <a href="https://www.linkedin.com/in/jeisenmann/" target="_blank">Jonathan Eisenmann</a><sup></sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Princeton University<br>SIGGRAPH 2023</span>
+                    <span class="author-block">Princeton University, Adobe Research<br>CVPR WiCV 2022</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://openaccess.thecvf.com/content/CVPR2022W/WiCV/html/Perroni-Scharf_Material_Swapping_for_3D_Scenes_Using_a_Learnt_Material_Similarity_CVPRW_2022_paper.html" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -85,16 +89,16 @@
             
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://maxineps.com/wp-content/uploads/2022/07/materials.txt" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fab fa-github"></i>
+                      <i class="fab fa-file"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Data</span>
                   </a>
                 </span>
 
-                <center><img style="margin-top:1cm;" src="static/images/dragon.png"> </center>
+                <center><img style="margin-top:1cm;" src="static/images/banner.png"> </center>
 
                
             </div>
@@ -136,8 +140,7 @@ End teaser video -->
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present a method for the digital fabrication of surfaces whose appearance varies based on viewing direction. The surfaces are constructed from a mesh of bars arranged in a self-occluding colored heightfield that creates the desired view-dependent effects. At the heart of our method is a novel and simple differentiable rendering algorithm specifically designed to render colored 3D heightfields and enable efficient calculation of the gradient of appearance with respect to heights and colors. This algorithm forms the basis of a coarse-to-fine ML-based optimization process that adjusts the heights and colors of the strips to minimize the loss between the desired and real surface appearance from each viewpoint, deriving meshes that can then be fabricated using a 3D printer. Using our method, we demonstrate both synthetic and real-world fabricated results with view-dependent appearance.          </p>
-        </div>
+            We present a method for augmenting photo-realistic 3D scene assets by automatically recognizing, matching, and swapping their materials. Our method proposes a material matching pipeline for the efficient replacement of unknown materials with perceptually similar PBR materials from a database, enabling the quick creation of many variations of a given 3D synthetic scene. At the heart of this method is a novel material similarity feature that is learnt, in conjunction with optimal lighting conditions, by fine-tuning a deep neural network on a material classification task using our proposed dataset. Our evaluation demonstrates that lighting optimization improves CNN-based texture feature extraction methods and better estimates material properties. We conduct a series of experiments showing our method's ability to augment photo-realistic indoor scenes using both standard and procedurally generated PBR materials.        </div>
       </div>
     </div>
   </div>
@@ -151,13 +154,13 @@ End teaser video -->
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Results Video</h2>
+      <h2 class="title is-3">Talk</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/8NRQdXFF1Go" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/YBwxFA0BfjM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -175,7 +178,13 @@ End teaser video -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{perroni2022material,
+        title={Material Swapping for 3D Scenes using a Learnt Material Similarity Measure},
+        author={Perroni-Scharf, Maxine and Sunkavalli, Kalyan and Eisenmann, Jonathan and Hold-Geoffroy, Yannick},
+        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+        pages={2034--2043},
+        year={2022}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
